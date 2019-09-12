@@ -1,0 +1,90 @@
+#sidebar {
+  background: $blue;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  .logo {
+    display: block;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+    padding: 15px;
+    background: darken($blue, 5%);
+  }
+  .user-dropdown {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+
+    .btn-group {
+      width: 100%;
+      .btn {
+        width: 100%;
+        background: no-repeat;
+        border: 1px solid #fff;
+      }
+    }
+    .dropdown-menu {
+      width: 100%;
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}
+.overflow-area{
+  max-height: 75vh;
+  overflow-y: auto;
+}
+#library-area,#lessons-area {
+  padding: 15px;
+  background: #fff;
+  display: none;
+  
+  overflow-y: auto;
+  .has-dropdown {
+    .item {
+      padding: 0;
+      background: none;
+      color: #3764c7;
+      text-align: left;
+      font-size: 14px;
+      display: block;
+      margin: 10px 0 10px;
+      &::before {
+        content: "\f115 ";
+        font-family: "FontAwesome";
+        font-size: 16px;
+        margin-right: 5px;
+      }
+    }
+    .items-menu {
+      display: flex;
+      flex-wrap: wrap;
+      .icon {
+        width: 25%;
+        margin-bottom: 5px;
+        img{
+          max-height: 50px;
+        }
+      }
+    }
+    .nobtn{
+      background: none;
+      padding: 0;
+      color: darken($blue, 10%);
+      text-transform: none;
+      font-size: 14px;
+      letter-spacing: 0;
+      display: inline-block;
+      margin-left: 25px;
+      text-align: left;
+    }
+  }
+}

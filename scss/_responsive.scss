@@ -1,0 +1,108 @@
+.mobile {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  #sidebar {
+    background: #3764c7;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    .user-dropdown {
+      position: relative;
+      bottom: auto;
+      width: 100%;
+      max-width: 100%;
+      padding: 15px;
+    }
+  }
+  #page-content {
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    .page-header {
+      position: relative;
+      left: auto;
+      top: auto;
+      width: 100%;
+      z-index: 1;
+      margin-bottom: 30px;
+    }
+  }
+  .select-language {
+    padding: 0 15px;
+    width: 100%;
+    .round_btn {
+      width: 100%;
+      margin: 0 0 10px;
+      padding: 0;
+      height: auto;
+      display: block;
+      border-radius: 0;
+      line-height: 50px;
+      font-weight: 900;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+  #library-area,
+  #lessons-area {
+    padding: 0 15px;
+    background: #fff;
+    overflow-y: auto;
+    max-height: 40vh;
+    .has-dropdown {
+      .item {
+        font-size: 11px;
+        letter-spacing: 0;
+        font-weight: 700;
+      }
+    }
+  }
+  .overflow-area {
+    display: flex;
+    justify-content: space-between;
+    .library {
+      width: 50%;
+      margin: 0;
+      a {
+        border-radius: 0;
+      }
+    }
+  }
+  #wrapper {
+    .page-content {
+      padding-top: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      .play-area {
+        align-items: flex-start;
+      }
+    }
+  }
+  #wrapper.inner-page .page-header .toggle-options {
+    font-size: 24px;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #page-content .page-header .page-title{
+      line-height: 45px;
+  }
+  #wrapper .page-content .play-area .droppable-area .drop-icon{
+      width: 45%;
+  }
+  #wrapper .page-content .play-area .droppable-area .drop-icon img{
+      max-height: initial;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1220px) {
+    
+}
